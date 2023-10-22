@@ -57,6 +57,8 @@
       "homepage": "https://sell-first.com/"
     }
   ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require-dev": {
     "laravel/pint": "^1.13",
     "orchestra/testbench": "^8.13",
@@ -68,6 +70,7 @@
   },
   "config": {
     "sort-packages": true,
+    "preferred-install": "dist",
     "optimize-autoloader": true,
     "allow-plugins": {
       "pestphp/pest-plugin": true
