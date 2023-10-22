@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-composer require sellfirstphp/sell-first-roles
+composer require sellfirstphp/sell-first-roles:dev-master
 ```
 
 to make your model accept roles you must add this trait to it

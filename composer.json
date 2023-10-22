@@ -57,7 +57,8 @@
       "homepage": "https://sell-first.com/"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require-dev": {
     "laravel/pint": "^1.13",
     "orchestra/testbench": "^8.13",
