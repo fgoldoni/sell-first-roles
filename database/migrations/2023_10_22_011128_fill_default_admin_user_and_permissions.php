@@ -93,6 +93,7 @@ class FillDefaultAdminUserAndPermissions extends Migration
         //Add new users
         $this->users = [
             [
+                'id' => \Illuminate\Support\Str::ulid(),
                 'name' => 'Admin SG',
                 'email' => 'support@sell-first.com',
                 'password' => Hash::make($this->password),
@@ -182,6 +183,7 @@ class FillDefaultAdminUserAndPermissions extends Migration
                     $userId = DB::table($this->userTable)->insertGetId($user);
                     DB::table('teams')->insert(
                         [
+                            'id' => \Illuminate\Support\Str::ulid(),
                             'name' => $user['name'] . '\'s Team',
                             'user_id' => $userId,
                             'personal_team' => true,
